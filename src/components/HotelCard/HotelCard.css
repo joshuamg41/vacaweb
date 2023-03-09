@@ -1,0 +1,27 @@
+.hotelCardBody {
+    background-color: #4C5150   ;
+    padding: 3rem 1.5rem;
+    border-radius: 10px;
+}
+.hotelCardBody :first-child{
+    background-color: black;
+    width: fit-content;
+    color: white;
+    font-size: 10px;
+    padding: 0.1rem;
+    font-weight: 400;
+}
+.hotelCardBody h3 {
+    color: #fff;
+    font-weight: 400;
+}
+.hotelCardBody p {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 10px;
+}
+.HotelCardPrice {
+    font-size: 19px;
+    color: #fff;
+    font-weight: 400;
+}

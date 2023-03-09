@@ -1,0 +1,67 @@
+.promotionBannerContainer{
+    background-color: #FDB54E;
+    height: 12rem;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    gap: 4rem;
+    
+}
+@media (max-width: 1000px) {
+    .promotionBannerContainer{
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+.promotionBannerImg{
+    flex:0.8;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../../public/collage.png');
+    background-size: cover;
+
+}
+@media (max-width: 1000px) {
+    .promotionBannerImg{
+      background-size: 80%;
+      background-position: bottom;
+    }
+  }
+.promotionBannerContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: 400px) {
+    .promotionBannerContent {
+        flex: 0.5;
+        
+    }
+  }
+.promotionBannerContent h2 {
+    width: 50%;
+    font-size: 33px;
+    font-weight: 600;
+    color: white;
+}
+.promotionBannerContent p {
+    width: 40%;
+    color: white;
+}
+@media (max-width: 1000px) {
+    .promotionBannerContent {
+        padding-left: 10px;
+    }
+    .promotionBannerContent h2 {
+        font-size: 18px;
+        width: 100%;
+        
+    }
+    .promotionBannerContent p {
+        font-size: 10px;
+        width: 100%;
+    }
+  }

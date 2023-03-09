@@ -1,0 +1,42 @@
+.searchCardContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+    top: -2rem;
+}
+.searchCard{
+    background-color: #fff;
+    border-radius: 0.7rem;
+    padding: 1rem 10vw;
+    box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
+    -webkit-box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
+    -moz-box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
+}
+.searchCard h3{
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #000;
+}
+.searchCardInput{
+    height: 1.7rem;
+    width: 15vw;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: 1px solid #000;
+    color:#4c4c4c;
+    padding: 0 10px;
+
+}
+.searchSelect{
+    border: 1px solid #000;
+    height: 1.7rem;
+    width: 15vw;
+    border-radius: 20px;
+    padding: 0 10px;
+    color:#4c4c4c;
+    padding: 0 10px;
+
+}

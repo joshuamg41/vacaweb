@@ -1,0 +1,62 @@
+.detailReservationCardContainer{
+    width: 250px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right:3vw;
+    height: fit-content;
+    position: relative;
+    top: 40px;
+}
+
+
+.detailReservationCardContainer h3 {
+    font-size: 13px;
+    font-weight: 500;
+}
+.detailReservationCardContainer h4 {
+    color: grey;
+    font-size: 9px;
+    font-weight: 300;
+
+}
+.detailReservationCardContainer h5 {
+    font-size: 8px;
+    margin: 3px 0;
+    font-weight: 300;
+}
+.detailReservationCardContainer span {
+    color: #F0991C;
+    font-weight: 300;
+    font-size: 13px;
+}
+.detailMap {
+    height: 150px;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+}
+.detailNavigation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 5px;
+    margin-top: 8px;
+}
+.detailNavigation h5 {
+    color: white;
+    background-color: black;
+    padding: 2px 10px;
+    font-weight: 600;
+}
+.buttonDetailCard {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #61BC6E;
+    border-width: 0;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 10px;
+    padding-bottom: 10px;
+}

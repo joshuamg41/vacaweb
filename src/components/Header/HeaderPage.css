@@ -1,0 +1,44 @@
+.headerContainer{
+    background-color: black;
+    padding: 0 2rem;  
+}
+/* Top Header*/
+@media (max-width: 500px) {
+    .headerTopContainer{
+      flex-direction: column-reverse;
+      gap: 0.8rem;
+    }
+  }
+.headerTopContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    
+    border-bottom: 1px solid #f1f1f183;
+}
+.headerContactIcons{
+    display: flex;
+    gap: 0.8rem;
+    color: #FDB54E;
+}
+.headerButtons{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+/* Navigation*/
+.headerNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    gap: 0.3rem;
+}
+.headerNav a{
+    color: #FDB54E;
+    font-size: 0.8rem;
+}
+.headerNav a:hover{
+    color: #fff;
+}

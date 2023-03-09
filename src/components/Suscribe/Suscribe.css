@@ -1,0 +1,17 @@
+.suscribe {
+    background-color: #fff;
+    margin-top: 5rem;
+    padding:2rem 0 3rem 5vw;
+}
+.suscribeForm {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+ 
+}
+.suscribeinput {
+    border: 1px solid #000;
+    padding-left: 10px;
+    border-radius: 10px;
+}

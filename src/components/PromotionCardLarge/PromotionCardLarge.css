@@ -1,0 +1,59 @@
+.promotionCardContainerLarge{
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-image: url('/public/FerrieBanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+
+}
+.promotionCardContainerLarge:first{
+    margin-right: 10px;
+}
+/* .promotionImgLarge{
+    
+    height: 280px;
+    position: absolute;
+    border-radius: 10px;
+    z-index: -1; 
+} */
+.promotionCardBodyLarge{
+height: 280px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.promotionCardBodyLarge h4 {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0 0.6rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+.promotionCardBodyLarge h2 {
+    padding: 0 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: #fff;
+    text-align: center;
+   
+}
+.promotionCardBodyLarge h3 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+.promotionCardBodyLarge a {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}

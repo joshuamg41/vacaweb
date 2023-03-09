@@ -1,0 +1,47 @@
+.promotionCardContainer{
+    height: 280px;
+    border-radius: 10px;
+    background-image: url('/public/Playa.png');
+    background-size: cover;
+    min-width: 260px;
+    width: 100%;
+
+}
+/* .promotionImg{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    z-index: -1; 
+    border-radius: 10px;
+} */
+.promotionCardBody{
+height: 280px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.promotionCardBody h4 {
+    background-color: #000;
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 0 0.6rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+.promotionCardBody h2 {
+    padding: 0 0px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    color: #fff;
+    text-align: center;
+   
+}
+.promotionCardBody h3 {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}

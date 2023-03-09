@@ -1,0 +1,12 @@
+.galeryContainer{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    row-gap: 20px;
+    column-gap: 10px;}
+.galeryBox{
+    background-color: black;
+    height: 300px;
+    width: 90%;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
