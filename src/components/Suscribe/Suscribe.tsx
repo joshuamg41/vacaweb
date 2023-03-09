@@ -2,6 +2,8 @@ import React from "react";
 import "./Suscribe.css";
 const Suscribe = () => {
   return (
+    <div className="suscribeContainer">
+
     <div className="suscribe">
       <h2 className="subtitle">
         Suscríbete y descubre más sobre nuestras nuevas ofertas.
@@ -20,6 +22,7 @@ const Suscribe = () => {
         </select>
         <button className="primaryButton">Suscribirse</button>
       </form>
+    </div>
     </div>
   );
 };

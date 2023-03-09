@@ -5,16 +5,24 @@
     margin-bottom: 3rem;
     top: -2rem;
     margin: 0 auto;;
+    max-width: 1000px;
     
 }
 .searchCard{
     background-color: #fff;
     border-radius: 0.7rem;
-    padding: 1rem 10vw;
+    padding: 2rem 5rem;
     box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
     -webkit-box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
     -moz-box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
-    max-width: 500px;
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    .searchCard{
+        background-color: #fff;
+        border-radius: 0.7rem;
+        padding: 1rem 10vw;
+    }
 }
 .searchCard h3{
     text-align: center;

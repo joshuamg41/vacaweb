@@ -7,8 +7,12 @@
     border-radius: 10px;
     display: flex;
     gap: 4rem;
+    box-shadow: 5px 29px 32px -13px rgba(21,19,19,0.51);
+    -webkit-box-shadow: 5px 29px 32px -13px rgba(21,19,19,0.51);
+    -moz-box-shadow: 5px 29px 32px -13px rgba(21,19,19,0.51);
     
 }
+
 @media (max-width: 1000px) {
     .promotionBannerContainer{
       flex-direction: column;

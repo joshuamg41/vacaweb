@@ -36,7 +36,7 @@ const HeaderPage = () => {
         <img src="/logos/disneyicon.svg" style={{height:12}}/>   Disney
         </Link>
         <Link className="col text-center" to="/">
-        <img src="/logos/excursionesicon.svg" style={{height:12}}/>   Excursiones
+        <img src="/logos/excursiones.svg" style={{height:12}}/>   Excursiones
         </Link>
         <Link className="col text-center" to="/">
         <img src="/logos/vuelosicon.svg" style={{height:12}}/>    Vuelos

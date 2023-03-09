@@ -1,10 +1,14 @@
-
+.cardContainer:hover {
+    box-shadow: 5px 29px 32px -13px rgba(21,19,19,0.51);
+    -webkit-box-shadow: 5px 29px 32px -13px rgba(21,19,19,0.51);
+    -moz-box-shadow: 5px 29px 32px -13px rgba(21,19,19,0.51);
+}
 .cardImg {
     height: 160px;
     margin: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    min-width: 200px;
+    min-width: 210px;
 
 }
 .cardBody{
