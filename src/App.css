@@ -9,7 +9,9 @@
   width: 90%;
   padding: 0 5px;
   margin: 0 auto;
+  max-width: 1200px;
 }
+
 .bannerText{
   padding-left: 5rem;
   padding-top: 3rem;
