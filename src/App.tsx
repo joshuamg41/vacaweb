@@ -23,9 +23,10 @@ function App() {
             experiencia
           </h1>
           <h2>Todo Incluido desde US 72.00</h2>
-          <Link to="/" className="tertiaryButton">
-            !Reserva ya!
-          </Link>
+          <br/>
+          <div className="bannerhome">
+            <Link to="/" className="tertiaryButton">!Reserva ya!</Link>
+          </div>
         </div>
         <SearchCard />
         <div className="container">
@@ -40,7 +41,7 @@ function App() {
                 type={"EXCUSIONES"}
                 title={"Day Pass todo incluido"}
                 coin={"USD"}
-              />  
+              />
               <PromotionCard
                 type={"EXCUSIONES"}
                 title={"Excursiones Isla Saona"}
