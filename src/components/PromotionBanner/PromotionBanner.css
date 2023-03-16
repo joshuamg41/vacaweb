@@ -1,9 +1,8 @@
 .promotionBannerContainer{
-    background-color: #FDB54E;
+    background-color: #2E7FF7;
     height: 12rem;
     width: 100%;
     overflow: hidden;
-    margin-top: 50px;
     border-radius: 10px;
     display: flex;
     gap: 4rem;

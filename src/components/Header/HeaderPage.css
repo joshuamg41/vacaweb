@@ -1,5 +1,5 @@
 .headerContainer{
-    background-color: black;
+    background-color: white;
     padding: 0 2rem;  
 }
 /* Top Header*/
@@ -16,12 +16,12 @@
     padding: 1.5rem 0;
     max-width: 1200px;
     margin: 0 auto; 
-    border-bottom: 1px solid #f1f1f183;
+    border-bottom: 1.5px solid #000;
 }
 .headerContactIcons{
     display: flex;
     gap: 0.8rem;
-    color: #FDB54E;
+    color: #2e7ff7;
 }
 .headerButtons{
     display: flex;
@@ -39,9 +39,10 @@
     gap: 0.3rem;
 }
 .headerNav a{
-    color: #FDB54E;
-    font-size: 0.8rem;
+    color: #2e7ff7;
+    font-size: 1rem;
 }
 .headerNav a:hover{
-    color: #fff;
+    color: #000;
+    font-weight: 500;
 }
