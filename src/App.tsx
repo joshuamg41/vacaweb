@@ -32,11 +32,7 @@ function App() {
         <div className="container">
           <section>
             <div className="promotionCard">
-              <PromotionCard
-                type={"EXCUSIONES"}
-                title={"Day Pass todo incluido"}
-                coin={"USD"}
-              />
+           
               <PromotionCard
                 type={"EXCUSIONES"}
                 title={"Day Pass todo incluido"}

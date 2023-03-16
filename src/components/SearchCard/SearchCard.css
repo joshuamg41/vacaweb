@@ -6,15 +6,16 @@
     top: -2rem;
     margin: 0 auto;;
     max-width: 1000px;
+    align-items: center;
     
 }
-.searchCard{
+.searchCard{    
     background-color: #fff;
     border-radius: 0.7rem;
     padding: 2rem 5rem;
-    box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
-    -webkit-box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
-    -moz-box-shadow: 3px 16px 55px 26px rgba(224,224,224,0.15);
+    box-shadow: 3px 16px 55px 26px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: 3px 16px 55px 26px rgba(0, 0, 0, 0.156);
+    -moz-box-shadow: 3px 16px 55px 26px rgba(0, 0, 0, 0.33);
     width: 100%;
 }
 @media (max-width: 1000px) {

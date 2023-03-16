@@ -1,12 +1,17 @@
 .suscribeContainer{
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 5rem ;
 }
 .suscribe {
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 5rem;
     padding: 2rem 3rem 2rem 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .suscribeForm {
     margin-top: 1rem;

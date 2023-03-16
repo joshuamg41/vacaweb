@@ -1,11 +1,10 @@
 .promotionImageContainer{
-    width: 100%;
-    max-width: 1200px;
+    width: 100%;    
     margin: 0 auto;
 }
 .PromotionImage {
-    height: 20vh;
+    height: 30vh;
     width: 100%;
     background-size: auto auto; 
-    max-width: 1200px;
+ 
 }

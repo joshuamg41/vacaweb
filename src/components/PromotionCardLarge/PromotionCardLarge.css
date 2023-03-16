@@ -7,6 +7,11 @@
     margin: 10px 0;
 
 }
+
+.promotionCardContainerLarge:hover{
+    filter: brightness(81%);
+    -webkit-filter: brightness(81%);
+    -moz-filter: brightness(81%);}
 .promotionCardContainerLarge:first{
     margin-right: 10px;
 }
@@ -32,6 +37,9 @@ justify-content: center;
     width: fit-content;
     margin: 0 auto;
 }
+/* .promotionCardBodyLarge h4 :hover{
+    
+} */
 .promotionCardBodyLarge h2 {
     padding: 0 40px;
     font-size: 2rem;
