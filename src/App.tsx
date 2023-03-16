@@ -10,6 +10,24 @@ import PromotionBanner from "./components/PromotionBanner/PromotionBanner";
 import Footer from "./components/Footer/Footer";
 import Suscribe from "./components/Suscribe/Suscribe";
 import PromotionImage from "./components/PromotionImage/PromotionImage";
+import styled from 'styled-components';
+import img from './assets/busbanner.png';
+
+export const Content = styled.div`
+  border: 1px solid #000;
+  background-image: url(${img});
+  width: 2000px;
+  height: 2000px;
+  padding-top: 3rem;
+  background-size: cover  ;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 28rem;
+  background-position-y: center;
+  border: 0px solid #000;
+`;
+
+
 
 function App() {
   return (
@@ -17,43 +35,45 @@ function App() {
       <HeaderPage />
       <div>
         {/* <img className="AppBanner" src={"/Clip.png"} alt={"pool vacation"} /> */}
-        <div className="bannerText">
-          <h1>
-            Vive la <br />
-            experiencia
+        <Content  >
+          <h1 className="bannerTexth1">
+          Travel safely 
           </h1>
-          <h2>Todo Incluido desde US 72.00</h2>
+          <h2 className="bannerTexth2">Transporte desde ""</h2>
           <br/>
           <div className="bannerhome">
-            <Link to="/" className="tertiaryButton">!Reserva ya!</Link>
+            <Link to="/trasports" className="tertiaryButton">!Reserva ahora!</Link>
           </div>
-        </div>
-        <SearchCard />
+        </Content >
+        <br/>
         <div className="container">
+     
           <section>
+          <br/>
             <div className="promotionCard">
            
               <PromotionCard
-                type={"EXCUSIONES"}
-                title={"Day Pass todo incluido"}
+                type={"RUTAS"}
+                title={"San Felipe Puerto Plata"} 
                 coin={"USD"}
               />
               <PromotionCard
-                type={"EXCUSIONES"}
+                type={"RUTAS"}
+                title={"Higuey La Altagracia"}
+                coin={"RD"}
+              />
+              <PromotionCard
+                type={"RUTAS"}
                 title={"Excursiones Isla Saona"}
                 coin={"RD"}
               />
               <PromotionCard
-                type={"EXCUSIONES"}
-                title={"Excursiones Isla Saona"}
-                coin={"RD"}
-              />
-              <PromotionCard
-                type={"EXCUSIONES"}
+                type={"RUTAS"}
                 title={"Excursiones Isla Saona"}
                 coin={"RD"}
               />
             </div>
+            <br/>
             <div className="promotionCardLarge">
               <PrommotionCardLarge
                 type={"EXCUSIONES"}
@@ -86,8 +106,10 @@ function App() {
           <article className="AppSuscribe">
             <PromotionBanner />
           </article>
+          <br/>
         </div>
-        <Suscribe />
+        {/* <Suscribe /> */}
+        <br />
         <PromotionImage />
       </div>
       <Footer />

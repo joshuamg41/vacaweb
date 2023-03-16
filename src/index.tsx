@@ -8,11 +8,21 @@ import Ferrie from "./containers/Ferrie/Ferrie";
 import Hotel from "./containers/Hotel/Hotel";
 import Destail from "./containers/Detail/Detail";
 import HotelDetail from "./containers/HotelDetail/HotelDetail";
+import Excurciones from "./containers/excursiones/excursiones";
+import Trasports from "./containers/Trasports/Transports";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/trasports",
+    element: <Trasports />,
+  },
+  {
+    path: "/excursiones",
+    element: <Excurciones />,
   },
   {
     path: "/ferrie",

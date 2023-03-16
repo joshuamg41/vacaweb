@@ -1,6 +1,6 @@
 .promotionCardContainer{
-    height: 280px;
-    border-radius: 10px;
+    height: 260px;
+    border-radius: 2px;
     background-image: url('/public/Playa.png');
     background-size: cover;
     min-width: 260px;

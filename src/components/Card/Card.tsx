@@ -10,7 +10,6 @@ const Card = () => {
           Be Live Experience <br /> Hamaca Beach
         </h2>
         
-        <h4 className="cardDetails">Hotel</h4>
         <h4 className="cardDetails">
           Oferta Valida Hasta <br /> 31 febrero 2021
         </h4>

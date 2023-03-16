@@ -3,19 +3,15 @@
     justify-content: center;
     position: relative;
     margin-bottom: 3rem;
-    top: -2rem;
     margin: 0 auto;;
     max-width: 1000px;
     align-items: center;
+    margin: 1rem auto;
     
 }
 .searchCard{    
     background-color: #fff;
-    border-radius: 0.7rem;
-    padding: 2rem 5rem;
-    box-shadow: 3px 16px 55px 26px rgba(0, 0, 0, 0.33);
-    -webkit-box-shadow: 3px 16px 55px 26px rgba(0, 0, 0, 0.156);
-    -moz-box-shadow: 3px 16px 55px 26px rgba(0, 0, 0, 0.33);
+    padding: 2rem 5rem;;
     width: 100%;
 }
 @media (max-width: 1000px) {
@@ -33,13 +29,10 @@
     color: #000;
 }
 .searchCardInput{
-    height: 1.7rem;
-    width: 15vw;
-    border-radius: 20px;
-    padding: 0 10px;
-    border: 1px solid #000;
-    color:#4c4c4c;
-    padding: 0 10px;
+   display: flex;
+   justify-content: center;
+gap: 0.7rem;
+
 
 }
 .searchSelect{

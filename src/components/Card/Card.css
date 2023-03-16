@@ -1,7 +1,4 @@
-.cardContainer {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+
 .cardContainer:hover {
     box-shadow: -1px 16px 29px -6px rgba(105,105,105,0.42);
     -webkit-box-shadow: -1px 16px 29px -6px rgba(105,105,105,0.42);
@@ -11,14 +8,14 @@
 .cardImg {
     height: 160px;
     margin: 0;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     min-width: 210px;
 
 }
 .cardBody{
     background-color: #fff;
-    border: 2px solid#E4E4E4;
+   
     border-top: none;
     padding-left: 20px;
     padding-right: 15px;

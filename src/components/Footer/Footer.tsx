@@ -3,35 +3,31 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footerContainer">
-      <img
+      {/* <img
         src={"/logos/vacalogonegro.svg"}
         alt={"on"}
         style={{ height: 40, marginBottom: 10 }}
-      />
+      /> */}
       <p>
-        Somos una agencia de Vacaciones Online que proporciona soluciones de
-        vacaciones completas al momento de planificar y reservar tus vacaciones
-        en la Republica Dominicana o en el exterior.
+      Agencia de Trasporte
       </p>
       <div className="footerBody">
         <div>
           <h3>Contactanos</h3>
           <p>
-            Ave. Winston Churchill #1550,
-            <br />
-            Plaza New Orleans, Suite 502 Urb. <br />
-            Fernández, Santo Domingo
+            Republica Dominicana, Veron Punta Cana
+              <br />
+            Calle Domingo maíz próximo a ciudad las palmas. <br />
+            plaza Guillermo 1
           </p>
           <p>(809)616-3000</p>
           <p>info@vaca.do</p>
         </div>
         <div>
           <h3>Servicios</h3>
-          <p>Hoteles</p>
+          <p>Trasporte</p>
           <p>Excusiones</p>
-          <p>Boletos aereos</p>
-          <p>Cruceros</p>
-          <p>Vuelos a Miami</p>
+         
         </div>
         <div>
           <h3>Informaciones</h3>
@@ -50,9 +46,11 @@ const Footer = () => {
           marginBottom: 10,
           borderTopColor: "gray",
           borderTopWidth: 1,
+          textAlign:"left",
+          width:"90%"
         }}
       >
-        Copyright © 2023 - Una marca de Estilo Travel S.R.L.
+        Copyright © 2023 - JASAMBRI Travel.
       </h4>
     </footer>
   );
