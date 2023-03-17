@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import "./App.css";
 import HeaderPage from "./components/Header/HeaderPage";
 import PromotionCard from "./components/PromotionCard/PromotionCard";
-import SearchCard from "./components/SearchCard/SearchCard";
 import PrommotionCardLarge from "./components/PromotionCardLarge/PromotionCardLarge";
 import Card from "./components/Card/Card";
 import PromotionBanner from "./components/PromotionBanner/PromotionBanner";
 import Footer from "./components/Footer/Footer";
-import Suscribe from "./components/Suscribe/Suscribe";
 import PromotionImage from "./components/PromotionImage/PromotionImage";
 import styled from 'styled-components';
 import img from './assets/busbanner.png';
@@ -107,10 +105,11 @@ function App() {
             <PromotionBanner />
           </article>
           <br/>
-        </div>
         {/* <Suscribe /> */}
         <br />
         <PromotionImage />
+        <br/>
+        </div>
       </div>
       <Footer />
     </div>

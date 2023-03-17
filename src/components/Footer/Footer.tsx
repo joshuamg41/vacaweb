@@ -3,11 +3,11 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footerContainer">
-      {/* <img
+      <img
         src={"/logos/vacalogonegro.svg"}
         alt={"on"}
         style={{ height: 40, marginBottom: 10 }}
-      /> */}
+      />
       <p>
       Agencia de Trasporte
       </p>
@@ -20,13 +20,13 @@ const Footer = () => {
             Calle Domingo maíz próximo a ciudad las palmas. <br />
             plaza Guillermo 1
           </p>
-          <p>(809)616-3000</p>
-          <p>info@vaca.do</p>
+          <p>(809)396-2749</p>
+          <p>info@jasambri.do</p>
         </div>
         <div>
           <h3>Servicios</h3>
           <p>Trasporte</p>
-          <p>Excusiones</p>
+          <p>Excursiones</p>
          
         </div>
         <div>

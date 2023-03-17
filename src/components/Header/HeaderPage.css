@@ -21,7 +21,7 @@
 .headerContactIcons{
     display: flex;
     gap: 0.8rem;
-    color: #2e7ff7;
+    color: #F17E22;
 }
 .headerButtons{
     display: flex;
@@ -44,5 +44,4 @@
 }
 .headerNav a:hover{
     color: #000;
-    font-weight: 500;
 }

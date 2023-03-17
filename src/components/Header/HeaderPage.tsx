@@ -35,10 +35,10 @@ const HeaderPage = () => {
         <Link className="col text-center" to="/trasports">
           Trasporte
         </Link>
-        <Link className="col text-center" to="/">
+        <Link className="col text-center" to="/ofertas">
           Ofertas
         </Link>
-        <Link className="col text-center" to="/">
+        <Link className="col text-center" to="/contacto">
           Contáctanos
         </Link>
         {/* <Link className="col text-center" to="/">

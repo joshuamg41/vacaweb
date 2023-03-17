@@ -1,0 +1,15 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+.contactForm input, .contactForm textarea {
+   width: 280px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: 0px solid transparent;
+    color: white;
+    background-color: #2C353F;
+}
+.contactForm textarea {
+    height: 100px;
+}

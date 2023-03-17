@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Card from "../../components/Card/Card";
 import Footer from "../../components/Footer/Footer";
 import HeaderPage from "../../components/Header/HeaderPage";
-import SearchCard from "../../components/SearchCard/SearchCard";
-
-import styled from "styled-components";
-import img from "../../assets/excusionesbanner.png";
-import HotelCard from "../../components/HotelCard/HotelCard";
 import PromotionCard from "../../components/PromotionCard/PromotionCard";
-import PromotionBanner from "../../components/PromotionBanner/PromotionBanner";
-import Card from "../../components/Card/Card";
+import SearchCard from "../../components/SearchCard/SearchCard";
+import styled from "styled-components";
+import img from "../../assets/busbanner.png";
+import buggies from "../../assets/buggies.png";
 import PromotionImage from "../../components/PromotionImage/PromotionImage";
+import PromotionBanner from "../../components/PromotionBanner/PromotionBanner";
 
-const Trasport = () => {
+const Ofertas = () => {
   const Content = styled.div`
     border: 1px solid #000;
     background-image: url(${img});
@@ -36,9 +35,9 @@ const Trasport = () => {
       /> */}
       <Content className="bannerText">
         <h1>
-          Travel safely
+          The experiences
           <br />
-          and comfortably
+          you deserve
         </h1>
         <h2>Reserva desde: US$ 249.00 p/p</h2>
         {/* <Link to="/" className="tertiaryButton">
@@ -46,31 +45,23 @@ const Trasport = () => {
           </Link> */}
       </Content>
       <br />
-      <SearchCard title="LAS EXPERIENCIAS QUE TE MERECES" />
-      <br />
       <div className="container">
-        <div className="HotelCardContainer">
-          <HotelCard />
-          <HotelCard />
-        </div>
-        <br/>
-        <h2 className="subtitle">Destinos en R.D</h2>
+        <h1 style={{ fontWeight: "400", fontSize: 50, color: 'gray' }}>Ofertas</h1>
         <br />
-        <div className="promotionCard" style={{ justifyContent: "center" }}>
-          <PromotionCard title={"NORTE"} coin={"USD"} price={""} show={false} />
-          <PromotionCard title={"SUR"} coin={"RD"} price={""} show={false} />
-          <PromotionCard title={"ESTE"} coin={"RD"} price={""} show={false} />
-          <PromotionCard title={"OESTE"} coin={"RD"} price={""} show={false} />
-        </div>
-        <br/>
         <article className="AppSuscribe">
-            <PromotionBanner/>
-          </article>
-          <br/>
-          <br />
-          <h2 className="subtitle">Destinos ""</h2>
+          <PromotionBanner
+            img={img}
+            title={"US$ 80.00"}
+            body={
+              "Excusión Bugies playa Macao - Laguna \n - Almuerzo\n - Playa"
+            }
+          />
+        </article>
+        <br />
+        <br />
+        <h2 className="subtitle">Aprovecha nuestras excusiones de temporada</h2>
         <h2 className="subtitle2">Desde USD: $72.00 no te la pierdas.</h2>
-        <br/>
+        <br />
         <div className="AppOferts">
           <Card />
           <Card />
@@ -80,11 +71,20 @@ const Trasport = () => {
           <Card />
         </div>
         <br />
-        <PromotionImage />
+        <article className="AppSuscribe">
+          <PromotionBanner
+            img={buggies}
+            title={"US$ 80.00"}
+            body={
+              "Excusión Bugies playa Macao - Laguna \n - Almuerzo\n - Playa"
+            }
+          />
+        </article>
+        <br />
       </div>
       <Footer />
     </div>
   );
 };
 
-export default Trasport;
+export default Ofertas;

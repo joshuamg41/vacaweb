@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="295.403" height="64.285" viewBox="0 0 295.403 64.285">
+    <defs>
+      <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#32d128"/>
+        <stop offset="1" stop-color="#057e29"/>
+      </linearGradient>
+      <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#057e29"/>
+        <stop offset="1" stop-color="#32d128"/>
+      </linearGradient>
+    </defs>
+    <g id="Grupo_25" data-name="Grupo 25" transform="translate(0)">
+      <rect id="Rectángulo_22" data-name="Rectángulo 22" width="259.595" height="45.028" rx="1.471" transform="translate(35.809 10.724)" fill="url(#linear-gradient)"/>
+      <text id="CONTACTAR" transform="translate(79.89 44.98)" fill="#fff" font-size="33" font-family="Helvetica"><tspan x="0" y="0">CONTACTAR</tspan></text>
+      <g id="Grupo_24" data-name="Grupo 24">
+        <path id="WhatsApp" d="M7291.991,575.842c0,17.3-15.459,31.315-34.531,31.315a37.17,37.17,0,0,1-16.691-3.9l-19.117,5.552,6.232-16.8a29.036,29.036,0,0,1-4.955-16.168c0-17.3,15.459-31.315,34.533-31.315S7291.991,558.547,7291.991,575.842Z" transform="translate(-7221.651 -544.527)" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+        <path id="Trazado_90" data-name="Trazado 90" d="M7253.448,546.628c-16.008,0-29.031,11.81-29.031,26.328a24.609,24.609,0,0,0,5.531,15.437l-3.627,9.775,11.156-3.24s10.074,4.356,15.971,4.356c16.008,0,29.033-11.81,29.033-26.328S7269.458,546.628,7253.448,546.628Z" transform="translate(-7217.641 -541.641)" fill="#fff" fill-rule="evenodd"/>
+        <path id="Trazado_91" data-name="Trazado 91" d="M7263.672,573.205c-.213-.32-.775-.513-1.621-.895s-5.012-2.243-5.783-2.5-1.344-.385-1.906.385-2.187,2.495-2.682,3.008-.986.577-1.834.192a22.315,22.315,0,0,1-11.516-9.125c-.492-.767-.051-1.182.371-1.564.383-.344.848-.9,1.271-1.344a5.174,5.174,0,0,0,.846-1.282,1.293,1.293,0,0,0-.072-1.344c-.211-.385-1.9-4.161-2.609-5.7s-1.41-1.279-1.9-1.279-1.059-.064-1.623-.064a3.263,3.263,0,0,0-2.256.959,8.3,8.3,0,0,0-2.963,6.4c0,3.779,3.031,7.428,3.457,7.938s5.854,8.515,14.457,11.589,8.607,2.048,10.16,1.92,5.008-1.856,5.713-3.648A5.9,5.9,0,0,0,7263.672,573.205Z" transform="translate(-7210.427 -534.678)" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </svg>
+  

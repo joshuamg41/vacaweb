@@ -10,6 +10,8 @@ import Destail from "./containers/Detail/Detail";
 import HotelDetail from "./containers/HotelDetail/HotelDetail";
 import Excurciones from "./containers/excursiones/excursiones";
 import Trasports from "./containers/Trasports/Transports";
+import Ofertas from "./containers/Ofertas/Ofertas";
+import Contacto from "./containers/contacto/contacto";
 
 const router = createBrowserRouter([
   {
@@ -25,25 +27,33 @@ const router = createBrowserRouter([
     element: <Excurciones />,
   },
   {
-    path: "/ferrie",
-    element: <Ferrie />,
+    path: "/ofertas",
+    element: <Ofertas />,
   },
   {
-    path: "/hotel",
+    path: "/contacto",
+    element: <Contacto />,
+  },
+  // {
+  //   path: "/ferrie",
+  //   element: <Ferrie />,
+  // },
+  {
+    path: "/hotel123231323",
     element: <Hotel />,
   },
-  {
-    path: "/detail",
-    element: <Destail />,
-  },
-  {
-    path: "/hoteldetail",
-    element: <HotelDetail />,
-  },
-  {
-    path: "/detail",
-    element: <Destail />,
-  },
+  // {
+  //   path: "/detail",
+  //   element: <Destail />,
+  // },
+  // {
+  //   path: "/hoteldetail",
+  //   element: <HotelDetail />,
+  // },
+  // {
+  //   path: "/detail",
+  //   element: <Destail />,
+  // },
 ]);
 
 const root = ReactDOM.createRoot(

@@ -7,6 +7,7 @@ import PromotionCard from "../../components/PromotionCard/PromotionCard";
 import SearchCard from "../../components/SearchCard/SearchCard";
 import styled from 'styled-components';
 import img from "../../assets/busbanner.png";
+import Maps from "./maps";
 const Trasports = () => {
 
 const Content = styled.div`
@@ -41,6 +42,7 @@ const Content = styled.div`
             !Reserva ya!
           </Link> */}
       </Content>
+      <Maps/>
       <br />
       <SearchCard title="LAS EXPERIENCIAS QUE NECESITAS" />
       <br />
