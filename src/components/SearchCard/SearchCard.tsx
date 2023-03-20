@@ -1,43 +1,108 @@
 import React from "react";
 import "./SearchCard.css";
-const SearchCard = ({ title, type,handleOpen,handleClose}: any) => {
+const SearchCard = ({
+  title,
+  type,
+  handleOpen,
+  handleClose,
+  setSeviceType,
+  serviceType,
+}: any) => {
   return (
     <>
       {type === "trasport" ? (
         <div className="searchCardContainer">
           <form className="searchCard">
-            <h3>{!title ? "¿ A DONDE QUIERES VACACIONAR ?" : title}</h3>
+            <h3>{!title ? "¿ Donde Quieres ir ?" : title}</h3>
             <div className="searchCardInput">
-              <input
-                type="button"
-                value="Lugar de Partida"
+              <select
+                onChange={(e) => setSeviceType(e.target.value)}
                 className="searchSelect"
                 style={{
-                  backgroundColor: "#gray",
+                  backgroundColor: "#EDECED",
                   color: "gray",
                   border: "1px solid #000",
                   fontSize: "1rem",
                   fontWeight: "400",
-                  borderColor: 'transparent'
-
+                  borderColor: "transparent",
+                  width: "fit-content",
                 }}
-                onClick={() => handleOpen()}
-              />
+              >
+                <option value="type">Tipo de Servicio</option>
+                <option value="trasport">Trasporte</option>
+                <option value="Toaeropuerto">Hasta el AeroPuerto</option>
+                <option value="Fromaeropuerto">Desde el AeroPuerto</option>
+                <option value="fromaeropuertoHotel">
+                  Aeropueto hasta hotel
+                </option>
+                <option value="ToaeropuertoHotel">
+                  Hotel hasta Aeropuerto
+                </option>
+              </select>
+              {serviceType !== "Fromaeropuerto" ? (
+                <input
+                  type="button"
+                  value="Lugar de Recogida"
+                  className="searchSelect"
+                  style={{
+                    color: "gray",
+                    border: "1px solid #000",
+                    fontSize: "1rem",
+                    fontWeight: "400",
+                    borderColor: "transparent",
+                  }}
+                  onClick={() => handleOpen()}
+                />
+              ) : null}
+              {serviceType !== "Toaeropuerto"  ? (
+                <input
+                  type="button"
+                  value="Lugar de Destino"
+                  className="searchSelect"
+                  style={{
+                    color: "gray",
+                    border: "1px solid #000",
+                    fontSize: "1rem",
+                    fontWeight: "400",
+                    borderColor: "transparent",
+                  }}
+                  onClick={() => handleClose()}
+                />
+              ) : null}
+              {serviceType === "Fromaeropuerto" ||
+              serviceType === "Toaeropuerto" ? (
+                <select
+                  className="searchSelect"
+                  style={{
+                    backgroundColor: "#EDECED",
+                    color: "gray",
+                    border: "1px solid #000",
+                    fontSize: "1rem",
+                    fontWeight: "400",
+                    borderColor: "transparent",
+                    width: "fit-content",
+                  }}
+                >
+                  <option value="aeropuerto">AeroPuerto</option>
+                  <option value="aeropuerto">
+                    AeroPuerto internacional de Las Americas SDQ
+                  </option>
+                  <option value="aeropuerto">AeroPuerto de Punta cana </option>
+                </select>
+              ) : null}
               <input
                 type="button"
-                value="Lugar de Salida"
-                className="searchSelect"
+                value="RESERVA"
+                className="primaryButton"
                 style={{
-                  backgroundColor: "#gray",
-                  color: "gray",
-                  border: "1px solid #000",
-                  fontSize: "1rem",
-                  fontWeight: "400",
-                  borderColor: 'transparent'
+                  backgroundColor: "white",
+                  borderColor: "gray",
+                  borderWidth: 1,
+                  paddingLeft: 30,
+                  paddingRight: 30,
+                  borderRadius: 4,
                 }}
-                onClick={() => handleClose()}
               />
-              <input type="button" value="RESERVA" className="primaryButton" style={{backgroundColor:'white', borderColor:'gray', borderWidth:1, paddingLeft:30, paddingRight:30, }}/>
             </div>
           </form>
         </div>

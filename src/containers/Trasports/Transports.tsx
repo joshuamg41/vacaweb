@@ -11,9 +11,10 @@ import GoogleApiWrapper from "./maps";
 import ModalUM from "../../components/Modal/ModalUM";
 const Trasports = () => {
   const [open, setOpen] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const [serviceType , setSeviceType] = React.useState('trasport');
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [open2, setOpen2] = React.useState(false);
   const handleOpen2 = () => setOpen2(true);
   const handleClose2 = () => setOpen2(false);
 
@@ -31,7 +32,7 @@ const Content = styled.div`
   border: 0px solid #000;
 `;
   return (
-    <div>
+    <div >
       <HeaderPage />
       {/* <img
         className="AppBanner"
@@ -45,18 +46,18 @@ const Content = styled.div`
           you deserve
         </h1>
         <h2>Reserva desde: US$ 249.00 p/p</h2>
-        {/* <Link to="/" className="tertiaryButton">
+        <Link to="/" className="tertiaryButton">
             !Reserva ya!
-          </Link> */}
+          </Link>
       </Content>
       {/* <div style={{height:200, width: 200}}>
       <GoogleApiWrapper/>
       </div> */}
-      <ModalUM open={open} handleClose={handleClose} handleOpen={handleOpen} name={'modal'} body={"modal"}/>
-      <ModalUM open={open2} handleClose={handleClose2} handleOpen={handleOpen2} name={'model2'} body={"modal"}/>
+      <ModalUM open={open} handleClose={handleClose} handleOpen={handleOpen} name={'Lugar de Partida'} body={"modal"}/>
+      <ModalUM open={open2} handleClose={handleClose2} handleOpen={handleOpen2} name={'Destino'} body={"modal"}/>
       <br />
-      <SearchCard title="LAS EXPERIENCIAS QUE NECESITAS"  type='trasport'  handleClose={handleOpen2} handleOpen={handleOpen} />
-      <br />
+     <SearchCard title="LAS EXPERIENCIAS QUE NECESITAS"  type='trasport' setSeviceType={setSeviceType} serviceType={serviceType} handleClose={handleOpen2} handleOpen={handleOpen} />
+       <br />
       <div className="container">
         <h2 className="subtitle">Destinos en R.D</h2>
         <br />

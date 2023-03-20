@@ -1,0 +1,38 @@
+.modalForm {
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.modalLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.modalSelect {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+
+}
+
+.modalButton {
+    background-color: #34495e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}

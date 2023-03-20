@@ -68,11 +68,11 @@ en contacto
         src={"/logos/vacalogo.svg"}
         alt={"logo travel vacation"}
       /> 
-            <img
+            {/* <img
         style={{width: 200, height: 200, alignSelf:'center'}}
         src={"/logos/whatapp.svg"}
         alt={"whatsapp logo"}
-      /> 
+      />  */}
         </div>
         </div>
         <br/>
