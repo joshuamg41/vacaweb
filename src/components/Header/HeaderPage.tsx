@@ -29,11 +29,11 @@ const HeaderPage = () => {
         <Link className="col text-center" to="/">
           Servicios
         </Link>
-        <Link className="col text-center" to="/excursiones">
-          Excursiones
-        </Link>
         <Link className="col text-center" to="/trasports">
           Trasporte
+        </Link>
+        <Link className="col text-center" to="/excursiones">
+          Excursiones
         </Link>
         <Link className="col text-center" to="/ofertas">
           Ofertas

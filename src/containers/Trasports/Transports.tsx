@@ -73,22 +73,22 @@ const Content = styled.div`
         <h2 className="subtitle2">Desde USD: $72.00 no te la pierdas.</h2>
         <br />
         <div className="AppOferts">
-          <Card />
-          <Card />
-          <Card />
-          <Card /> <Card />
-          <Card />
+        <Card title="Snorkeling Punta Cana Beach" image={"./snorkeling.png"}/>
+          <Card title="Excusión
+Isla Catalina" image="./islacatalina.png"/>
+          <Card title="Excusión Isla Saona" image="islasaona.png"/>
+          <Card title="Excursón Santo Domingo" image="citytour.png"/> <Card />
           <Card />
         </div>
         <br />
         <h2 className="subtitle">Mas Destinos"</h2>
         <br />
         <div className="AppOferts">
-          <Card />
-          <Card />
-          <Card />
-          <Card /> <Card />
-          <Card />
+          <Card title="Excusión
+Isla Catalina" image="./islacatalina.png"/>
+          <Card title="Excusión Isla Saona" image="islasaona.png"/>
+          <Card title="Excursón Santo Domingo" image="citytour.png"/> <Card />
+        <Card title="Snorkeling Punta Cana Beach" image={"./snorkeling.png"}/>
           <Card />
         </div>
       </div>

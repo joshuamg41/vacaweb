@@ -72,12 +72,13 @@ const Trasport = () => {
         <h2 className="subtitle2">Desde USD: $72.00 no te la pierdas.</h2>
         <br/>
         <div className="AppOferts">
+          <Card title="Snorkeling Punta Cana Beach" image={"./snorkeling.png"}/>
+          <Card title="Excusión
+Isla Catalina" image="./islacatalina.png"/>
+          <Card title="Excusión Isla Saona" image="islasaona.png"/>
+          <Card title="Excursón Santo Domingo" image="citytour.png"/> <Card />
           <Card />
-          <Card />
-          <Card />
-          <Card /> <Card />
-          <Card />
-          <Card />
+         
         </div>
         <br />
         <PromotionImage />

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
-const Card = () => {
+const Card = ({title, image}:any) => {
   return (
     <div className="cardContainer">
-      <img src={"/Playa.png"} alt={"promotion"} className="cardImg" />
+      <img src={image ? image : "/Playa.png"} alt={"promotion"} className="cardImg" />
       <div className="cardBody">
         <h2 className="cardTitle">
-          Be Live Experience <br /> Hamaca Beach
+       { title ? title :  "Be Live Experience snorkeling"}
         </h2>
         
         <h4 className="cardDetails">

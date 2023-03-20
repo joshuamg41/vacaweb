@@ -45,7 +45,7 @@ const SearchCard = ({
                 <input
                   type="button"
                   value="Lugar de Recogida"
-                  className="searchSelect"
+                  className="button"
                   style={{
                     color: "gray",
                     border: "1px solid #000",
@@ -123,14 +123,8 @@ const SearchCard = ({
                 type="button"
                 value="RESERVA"
                 className="primaryButton"
-                style={{
-                  backgroundColor: "white",
-                  borderColor: "gray",
-                  borderWidth: 1,
-                  paddingLeft: 30,
-                  paddingRight: 30,
-                  borderRadius: 4,
-                }}
+            
+                
               />
             </div>
           </form>
