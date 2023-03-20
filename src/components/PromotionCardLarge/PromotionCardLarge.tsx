@@ -10,7 +10,7 @@ const promotionCardLarge = ({ type, title, coin }: any) => {
           <h2>{title}</h2>
           <h3>DESDE</h3>
           <h2>{coin}:$2,950</h2>
-          <a className="primaryButton">RESERVA YA</a>
+          <a className="primaryButton"> RESERVA YA</a>
         </div>
       </div>
     </Link>
