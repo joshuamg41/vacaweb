@@ -3,7 +3,6 @@ import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "./ModalUM.css";
 const style = {
@@ -24,31 +23,22 @@ export default function TransitionsModal({
   body,
 }: any) {
   const [provinces, setProvinces] = React.useState<any>([]);
-  const [sector, setSector] = React.useState<any>([]);
   const [municipios, setMunicipios] = React.useState<any>([]);
 
   const handleProvinces = () => {
     const options = { method: "GET" };
-    fetch("http://94.74.64.214/api/get/provinces", options)
+    fetch("http://provinciasrd.raydelto.org/provincias", options)
       .then((response) => response.json())
-      .then((response) => setProvinces(response.provinces))
+      .then((response) => setProvinces(response.data))
+      
       .catch((err) => console.error(err));
   };
 
-  console.log(municipios,'es');
   const handleMunicipios = (e: any) => {
     const options = { method: "GET" };
-    fetch(`http://94.74.64.214/api/get/municipalities/${e}`, options)
+    fetch(`http://provinciasrd.raydelto.org/provincias/${e}/municipios`, options)
       .then((response) => response.json())
-      .then((response) => setMunicipios(response.municipalities))
-      .catch((err) => console.error(err));
-  };
-
-  const handleSector = (e: any) => {
-    const options = { method: "GET" };
-    fetch(`http://94.74.64.214/api/get/sectors/${e}`, options)
-      .then((response) => response.json())
-      .then((response) => setSector(response.sectors))
+      .then((response) => setMunicipios(response.data))
       .catch((err) => console.error(err));
   };
 
@@ -85,8 +75,8 @@ export default function TransitionsModal({
                   onChange={(e) => handleMunicipios(e.target.value)}
                 >
                   {provinces.map((province: any) => (
-                    <option value={province?.bidclasif}>
-                      {province?.ctituloclas}
+                    <option value={province?.codigo}>
+                      {province?.nombre}
                     </option>
                   ))}
                 </select>
@@ -95,34 +85,23 @@ export default function TransitionsModal({
                     <label className="modalLabel">Municipio</label>
                     <select
                       className="modalSelect"
-                      onChange={(e) => handleSector(e.target.value)}
                     >
                       {municipios.map((municipio: any) => (
-                        <option value={municipio?.bidclasif}>
-                          {municipio?.ctituloclas}
+                        <option value={municipio?.codigo}>
+                          {municipio?.nombre}
                         </option>
                       ))}
                     </select>
                   </>
                 ) : null}
-                   {sector.length > 0 ? (
-                  <>
-                    <label className="modalLabel">Sector</label>
-                    <select
-                      className="modalSelect"
-                      onChange={(e) => console.log(e.target.value)}
-                    >
-                      {sector.map((value: any) => (
-                        <option value={value?.bidclasif}>
-                          {value?.ctituloclas}
-                        </option>
-                      ))}
-                    </select>
-                  </>
-                ) : null}
+
+                <label className="modalLabel">Dirección</label>
+                <input className="modalSelect" type="text" />
+                <label className="modalLabel">Fecha</label>
+                <input className="modalSelect" type="date" />
                 <label className="modalLabel">Cantidad de Pasajeros </label>
                 <input className="modalSelect" type="number" />
-                <label className="modalLabel">Equipaje</label>
+                <label className="modalLabel">Cantidad de Equipaje</label>
                 <input className="modalSelect" type="number" />
                 {/* <input className="modalButton" type="submit" value="OK" /> */}
               </form>
