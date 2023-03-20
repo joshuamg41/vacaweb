@@ -7,8 +7,15 @@ import PromotionCard from "../../components/PromotionCard/PromotionCard";
 import SearchCard from "../../components/SearchCard/SearchCard";
 import styled from 'styled-components';
 import img from "../../assets/busbanner.png";
-import Maps from "./maps";
+import GoogleApiWrapper from "./maps";
+import ModalUM from "../../components/Modal/ModalUM";
 const Trasports = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const [open2, setOpen2] = React.useState(false);
+  const handleOpen2 = () => setOpen2(true);
+  const handleClose2 = () => setOpen2(false);
 
 const Content = styled.div`
   border: 1px solid #000;
@@ -42,9 +49,13 @@ const Content = styled.div`
             !Reserva ya!
           </Link> */}
       </Content>
-      <Maps/>
+      {/* <div style={{height:200, width: 200}}>
+      <GoogleApiWrapper/>
+      </div> */}
+      <ModalUM open={open} handleClose={handleClose} handleOpen={handleOpen} name={'modal'} body={"modal"}/>
+      <ModalUM open={open2} handleClose={handleClose2} handleOpen={handleOpen2} name={'model2'} body={"modal"}/>
       <br />
-      <SearchCard title="LAS EXPERIENCIAS QUE NECESITAS" />
+      <SearchCard title="LAS EXPERIENCIAS QUE NECESITAS"  type='trasport'  handleClose={handleOpen2} handleOpen={handleOpen} />
       <br />
       <div className="container">
         <h2 className="subtitle">Destinos en R.D</h2>
