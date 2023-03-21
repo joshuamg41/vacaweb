@@ -12,6 +12,7 @@ import ModalUM from "../../components/Modal/ModalUM";
 import { Switch } from "@mui/material";
 import { width } from "@mui/system";
 import Counter from "../../components/Counter/Counter";
+import Autocomplete from "react-google-autocomplete";
 import "./Transports.css";
 const Trasports = () => {
   const [open, setOpen] = React.useState(false);
@@ -144,33 +145,66 @@ const Trasports = () => {
           serviceType !== "fromaeropuertoHotel" ? (
             <>
               <label className="modalLabel">Lugar de Recogida</label>
-              <input
-                placeholder="Arrastre en el Mapa o ponga la direccion"
-                className="modalSelect"
-                onChange={(e) => setPickup(e.target.value)}
+              <Autocomplete
+                style={{
+                  width: "100%",
+                  marginBottom: 10,
+                  padding: 12,
+                  border: "1px solid #ddd",
+                  borderRadius: 4,
+                  boxSizing: "border-box",
+                  fontSize: 14,
+                }}
+                apiKey={"AIzaSyAMdyBg_PG6w5qa2mHBFaZpQF68Jz92tjI"}
+                onPlaceSelected={(place) => {
+                  console.log(place);
+                }}
               />
-                <input
-                placeholder="Otras Paradas"
-                className="modalSelect"
-                onChange={(e) => setPickup(e.target.value)}
+                <Autocomplete
+                style={{
+                  width: "100%",
+                  marginBottom: 10,
+                  padding: 12,
+                  border: "1px solid #ddd",
+                  borderRadius: 4,
+                  boxSizing: "border-box",
+                  fontSize: 14,
+                }}
+                apiKey={"AIzaSyAMdyBg_PG6w5qa2mHBFaZpQF68Jz92tjI"}
+                onPlaceSelected={(place) => {
+                  console.log(place);
+                }}
               />
-              <div>
-              <label className="modalLabel" style={{fontSize:13}}>Asiento infantil</label>
-                <Switch/>
-              </div>
-              <br/>
+           
 
+              <div>
+                <label className="modalLabel" style={{ fontSize: 13 }}>
+                  Asiento infantil
+                </label>
+                <Switch />
+              </div>
+              <br />
             </>
           ) : null}
           {serviceType !== "Toaeropuerto" &&
           serviceType !== "ToaeropuertoHotel" &&
           serviceType !== "fromaeropuertoHotel" ? (
             <>
-              <label className="modalLabel" >Lugar de Destino</label>
-              <input
-                placeholder="Arrastre en el Mapa ponga la direccion"
-                className="modalSelect"
-                onChange={(e) => setDestino(e.target.value)}
+              <label className="modalLabel">Lugar de Destino</label>
+              <Autocomplete
+                style={{
+                  width: "100%",
+                  marginBottom: 10,
+                  padding: 12,
+                  border: "1px solid #ddd",
+                  borderRadius: 4,
+                  boxSizing: "border-box",
+                  fontSize: 14,
+                }}
+                apiKey={"AIzaSyAMdyBg_PG6w5qa2mHBFaZpQF68Jz92tjI"}
+                onPlaceSelected={(place) => {
+                  console.log(place);
+                }}
               />
             </>
           ) : null}
