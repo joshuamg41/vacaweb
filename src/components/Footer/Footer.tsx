@@ -9,7 +9,7 @@ const Footer = () => {
         style={{ height: 40, marginBottom: 10 }}
       />
       <p>
-      Agencia de Trasporte
+      Agencia de Trasporte y Excursiones en Punta Cana, República Dominicana.
       </p>
       <div className="footerBody">
         <div>

@@ -16,7 +16,7 @@ const PromotionCard = ({type, title, coin, price, show, img}:any) => {
 
 
   return (
-    <Link to='/detail'>
+    <Link to='/hoteldetail'>
     <Content className="promotionCardContainer">
       <div className="promotionCardBody">
         <h2>{title}</h2>

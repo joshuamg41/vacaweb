@@ -46,9 +46,9 @@ const Content = styled.div`
           you deserve
         </h1>
         <h2>Reserva desde: US$ 249.00 p/p</h2>
-        <Link to="/" className="tertiaryButton">
+        {/* <Link to="/" className="tertiaryButton">
             !Reserva ya!
-          </Link>
+          </Link> */}
       </Content>
       {/* <div style={{height:200, width: 200}}>
       <GoogleApiWrapper/>

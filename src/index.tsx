@@ -46,10 +46,10 @@ const router = createBrowserRouter([
   //   path: "/detail",
   //   element: <Destail />,
   // },
-  // {
-  //   path: "/hoteldetail",
-  //   element: <HotelDetail />,
-  // },
+  {
+    path: "/hoteldetail",
+    element: <HotelDetail />,
+  },
   // {
   //   path: "/detail",
   //   element: <Destail />,

@@ -10,3 +10,36 @@
     margin-left: 3vw;
     margin-top: 3vh;
 }
+.hotelDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 30px;
+}
+.galeryhoteldetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 5rem 0;
+}
+.galeryhoteldetails div {
+    width: 100%;
+    background-color: #B3B3B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+.hotelDetailbody{
+    padding: 5rem 0;
+}
+.hotelDetailbody h3{
+    color: #3E6077;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.hotelDetailbody h4{ 
+    font-size: 0.8rem;
+    font-weight: 500;
+}
