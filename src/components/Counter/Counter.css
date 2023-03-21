@@ -1,0 +1,50 @@
+.counter {
+    width: 100%;
+    display: flex;
+   padding: 10px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+ 
+.counter h5 {
+  margin-bottom: 4px;
+}
+ 
+.counter__output {
+ margin-right: 5px;   
+}
+
+.btn__container {
+    
+}
+
+.control__btn {
+    background-color: gray;
+    border: none;
+    padding: 5px 15px;
+    margin: 0 5px 0 0;  
+    border-radius: 4px;
+
+
+}
+ 
+.control__btn:hover {
+  
+}
+ 
+.reset {
+    background-color:  #2e7ff7;
+    border: none;
+    padding: 5px 15px;
+    margin: 0 5px;  
+    border-radius: 4px;
+
+}
+ 
+.reset:hover {
+
+}
