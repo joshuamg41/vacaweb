@@ -7,12 +7,14 @@ const Footer = () => {
         src={"/logos/vacalogonegro.svg"}
         alt={"on"}
         style={{ height: 40, marginBottom: 10 }}
+
       />
       <p>
         Somos una agencia de Vacaciones Online que proporciona soluciones de
         vacaciones completas al momento de planificar y reservar tus vacaciones
         en la Republica Dominicana o en el exterior.
       </p>
+      <br/>
       <div className="footerBody">
         <div>
           <h3>Contactanos</h3>

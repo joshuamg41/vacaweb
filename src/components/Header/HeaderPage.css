@@ -3,7 +3,7 @@
     padding: 0 2rem;  
 }
 /* Top Header*/
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .headerTopContainer{
       flex-direction: column-reverse;
       gap: 0.8rem;
@@ -22,11 +22,21 @@
     display: flex;
     gap: 0.8rem;
     color: #FDB54E;
+
+}
+.headerContactIcons a{
+    color: #FDB54E;
+}
+.headerContactIcons a:hover{
+    color: #FFF;
 }
 .headerButtons{
     display: flex;
     gap: 0.5rem;
     align-items: center;
+}
+.headerButtons a:hover{
+    color: white;
 }
 /* Navigation*/
 .headerNav {
@@ -40,8 +50,13 @@
 }
 .headerNav a{
     color: #FDB54E;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
 }
+@media (max-width: 550px) {
+    .headerNav a{
+        font-size: 0.8rem;
+    }
+  }
 .headerNav a:hover{
     color: #fff;
 }

@@ -9,7 +9,7 @@
     align-items: center;
 }
 .footerContainer p {
-    font-size: 10px;
+    font-size: 12px;
     max-width: 500px;
     text-align: center;
     color: #929292;
@@ -23,9 +23,21 @@
     justify-items: center;
    /* padding: 0 10vw;*/
 }.footerContainer h3 {
-font-size: 10px;
+font-size: 13px;
 }
 .footerBody p {
-font-size: 8px;
+font-size: 11px;
 text-align: start;
+}
+
+@media (max-width: 1000px) {
+    .footerContainer{
+        padding:0 10px
+    }
+    .footerContainer h3 {
+        font-size: 12px;
+        }
+    .footerBody p {
+        font-size: 9px;
+    }
 }

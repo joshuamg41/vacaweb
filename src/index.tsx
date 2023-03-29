@@ -8,6 +8,7 @@ import Ferrie from "./containers/Ferrie/Ferrie";
 import Hotel from "./containers/Hotel/Hotel";
 import Destail from "./containers/Detail/Detail";
 import HotelDetail from "./containers/HotelDetail/HotelDetail";
+import Contact from "./containers/Contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/detail",
     element: <Destail />,
+  },
+  {
+    path: "/contact",
+    element: <Contact/>,
   },
 ]);
 

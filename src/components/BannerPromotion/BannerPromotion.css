@@ -1,0 +1,36 @@
+.promotionContainer{
+    display: flex;
+    flex-direction: row;
+
+}
+.promotionText{
+    display: flex; 
+    padding: 30px 7vw;
+    height: 90%;
+}
+.promotionItem{
+    flex: 1;       
+}
+.promotionTextContainer{
+    flex: 1;
+   
+}
+.promotionContainermovil{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .promotionContainermovil{
+        display: block;
+    }
+    
+    .promotionContainer{
+        display: none;
+    }
+    /* .promotionItem{
+            
+    }
+    .promotionTextContainer{
+       
+    } */
+  
+}

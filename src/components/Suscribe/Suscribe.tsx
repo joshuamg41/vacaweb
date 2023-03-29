@@ -17,8 +17,7 @@ const Suscribe = () => {
         <input className="suscribeinput" placeholder="Apellido" />
         <input className="suscribeinput" placeholder="Correo" type="email" />
         <select className="suscribeinput">
-          <option value="1">Republica Dominicana</option>
-          <option value="2">Mujer</option>
+          <option value="Republica Dominicana">Republica Dominicana</option>
         </select>
         <button className="primaryButton">Suscribirse</button>
       </form>

@@ -1,0 +1,30 @@
+.ContactFormContainer{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+}
+.ContactFormContainer label{
+    color: #ccc;
+ 
+}
+.ContactFormContainer input, textarea{
+    margin: 0px 0 20px 0px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.ContactFormContainer textarea{
+    height: 50px;
+    resize: none;
+}
+.ContactFormContainer input[type="submit"]{
+    background-color: #FDB54E;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
