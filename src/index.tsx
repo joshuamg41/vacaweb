@@ -3,12 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, createBrowserRouter, Route, RouterProvider, Routes } from "react-router-dom";
 import Ferrie from "./containers/Ferrie/Ferrie";
 import Hotel from "./containers/Hotel/Hotel";
 import Destail from "./containers/Detail/Detail";
 import HotelDetail from "./containers/HotelDetail/HotelDetail";
 import Contact from "./containers/Contact/Contact";
+import Lotery from "./containers/Lotery/Lotery";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <Contact/>,
+    element: <Contact />,
+  },
+  {
+    path: "/lotery",
+    element: <Lotery />,
   },
 ]);
 
@@ -46,7 +51,18 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="lotery" element={<Lotery />} />
+        <Route path="ferrie" element={<Ferrie />} />
+        <Route path="hotel" element={<Hotel />} />
+        <Route path="detail" element={<Destail />} />
+        <Route path="hoteldetail" element={<HotelDetail />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+    {/* <RouterProvider router={router} /> */}
   </React.StrictMode>
 );
 

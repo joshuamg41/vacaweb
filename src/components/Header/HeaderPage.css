@@ -29,6 +29,7 @@
 }
 .headerContactIcons a:hover{
     color: #FFF;
+    
 }
 .headerButtons{
     display: flex;
@@ -51,6 +52,7 @@
 .headerNav a{
     color: #FDB54E;
     font-size: 0.95rem;
+    font-weight: 500;
 }
 @media (max-width: 550px) {
     .headerNav a{
@@ -59,4 +61,6 @@
   }
 .headerNav a:hover{
     color: #fff;
+    text-decoration: none;
+    
 }
