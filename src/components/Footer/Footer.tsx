@@ -3,20 +3,23 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footerContainer">
+
+
       <img
-        src={"/logos/vacalogonegro.svg"}
+        src={"/jasambrilogo.png"}
         alt={"on"}
-        style={{ height: 40, marginBottom: 10 }}
+        style={{ height: 60, width: 80, marginBottom: 10 }}
       />
       <p>
-      Agencia de Trasporte y Excursiones en Punta Cana, República Dominicana.
+        Agencia de Trasporte y Excursiones en Punta Cana, República Dominicana.
       </p>
+
       <div className="footerBody">
         <div>
           <h3>Contactanos</h3>
           <p>
             Republica Dominicana, Veron Punta Cana
-              <br />
+            <br />
             Calle Domingo maíz próximo a ciudad las palmas. <br />
             plaza Guillermo 1
           </p>
@@ -27,7 +30,7 @@ const Footer = () => {
           <h3>Servicios</h3>
           <p>Trasporte</p>
           <p>Excursiones</p>
-         
+
         </div>
         <div>
           <h3>Informaciones</h3>
@@ -46,8 +49,8 @@ const Footer = () => {
           marginBottom: 10,
           borderTopColor: "gray",
           borderTopWidth: 1,
-          textAlign:"left",
-          width:"90%"
+          textAlign: "left",
+          width: "90%"
         }}
       >
         Copyright © 2023 - JASAMBRI Travel.

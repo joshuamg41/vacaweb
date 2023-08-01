@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Card from "../../components/Card/Card";
 import Footer from "../../components/Footer/Footer";
@@ -26,7 +26,8 @@ const Trasports = () => {
   const [destino, setDestino] = React.useState("");
   const [aeropuerto, setAeropuerto] = React.useState("");
   const [hotel, setHotel] = React.useState("");
-
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const [child, setChild] = React.useState(false)
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const handleOpen2 = () => setOpen2(true);
@@ -35,8 +36,6 @@ const Trasports = () => {
   const Content = styled.div`
     border: 1px solid #000;
     background-image: url(${img});
-    width: 2000px;
-    height: 2000px;
     padding-top: 3rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,6 +43,8 @@ const Trasports = () => {
     height: 28rem;
     background-position-y: center;
     border: 0px solid #000;
+    padding-left:10px;
+
   `;
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -52,6 +53,11 @@ const Trasports = () => {
     });
   }, []);
 
+  const scrollToSection = () => {
+    if (sectionRef.current !== null) {
+      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const changeLocation = (e: any) => {
     setSeviceType(e);
     if (e === "Toaeropuerto" && aeropuerto === "aeropuertopuntacana")
@@ -76,17 +82,24 @@ const Trasports = () => {
         src={"/FerrieBanner.png"}
         alt={"pool vacation"}
       /> */}
-      <Content className="bannerText">
-        <h1>
-          The experiences
-          <br />
-          you deserve
-        </h1>
-        <h2>Reserva desde: US$ 249.00 p/p</h2>
+
+
+      <Content className="bannerText" >
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginLeft: '10%' }}>
+          <div>
+
+            <img src={"/jasambrilogo.png"} alt={"on"} style={{ height: 200, }} />
+          </div>
+          {/* <div>
+
+            <h2>Viajes  <br /> Confortables y Seguros<br /> <span onClick={scrollToSection} className="btn btn-primary">HAZ TU RESERVACION AQUI <i className="fa-solid fa-arrow-down-long" style={{ color: "#ff9300", marginLeft: 10 }}></i></span></h2>
+          </div> */}
+        </div>
         {/* <Link to="/" className="tertiaryButton">
             !Reserva ya!
           </Link> */}
       </Content>
+
       {/* <div style={{height:200, width: 200}}>
       <GoogleApiWrapper/>
       </div> */}
@@ -106,11 +119,17 @@ const Trasports = () => {
       />
       <br />
       {/* <SearchCard title="LAS EXPERIENCIAS QUE NECESITAS"  type='trasport' setSeviceType={setSeviceType} serviceType={serviceType} handleClose={handleOpen2} handleOpen={handleOpen} /> */}
-      <div className="container bookingContainer">
-        <div style={{ flex: 1 }}>
+      <div className="container bookingContainer" ref={sectionRef} style={{ display: 'flex' }}>
+        <div>
           <label className="modalLabel">Tipo de servicio</label>
+          {/* <select class="" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select> */}
           <select
-            className="modalSelect"
+            className="modalSelect form-select"
             name="Type"
             id="Type"
             onChange={(e) => changeLocation(e.target.value)}
@@ -141,8 +160,8 @@ const Trasports = () => {
             </div>
           </div>
           {serviceType !== "Fromaeropuerto" &&
-          serviceType !== "ToaeropuertoHotel" &&
-          serviceType !== "fromaeropuertoHotel" ? (
+            serviceType !== "ToaeropuertoHotel" &&
+            serviceType !== "fromaeropuertoHotel" ? (
             <>
               <label className="modalLabel">Lugar de Recogida</label>
               <Autocomplete
@@ -150,7 +169,7 @@ const Trasports = () => {
                   width: "100%",
                   marginBottom: 10,
                   padding: 12,
-                  border: "1px solid #ddd",
+                  border: "0px solid #ddd",
                   borderRadius: 4,
                   boxSizing: "border-box",
                   fontSize: 14,
@@ -160,12 +179,12 @@ const Trasports = () => {
                   console.log(place);
                 }}
               />
-                <Autocomplete
+              <Autocomplete
                 style={{
                   width: "100%",
                   marginBottom: 10,
                   padding: 12,
-                  border: "1px solid #ddd",
+                  border: "0px solid #ddd",
                   borderRadius: 4,
                   boxSizing: "border-box",
                   fontSize: 14,
@@ -175,20 +194,27 @@ const Trasports = () => {
                   console.log(place);
                 }}
               />
-           
+
 
               <div>
                 <label className="modalLabel" style={{ fontSize: 13 }}>
                   Asiento infantil
                 </label>
-                <Switch />
+                <Switch onChange={() => setChild(!child)}/>
+
+                {child === true ? <input
+                  type="number"
+                  className="modalSelect"
+                  placeholder="Numero de niños"
+                  onChange={(e) => setTime(e.target.value)}
+                /> : null}
               </div>
               <br />
             </>
           ) : null}
           {serviceType !== "Toaeropuerto" &&
-          serviceType !== "ToaeropuertoHotel" &&
-          serviceType !== "fromaeropuertoHotel" ? (
+            serviceType !== "ToaeropuertoHotel" &&
+            serviceType !== "fromaeropuertoHotel" ? (
             <>
               <label className="modalLabel">Lugar de Destino</label>
               <Autocomplete
@@ -196,7 +222,7 @@ const Trasports = () => {
                   width: "100%",
                   marginBottom: 10,
                   padding: 12,
-                  border: "1px solid #ddd",
+                  border: "0px solid #ddd",
                   borderRadius: 4,
                   boxSizing: "border-box",
                   fontSize: 14,
@@ -209,9 +235,9 @@ const Trasports = () => {
             </>
           ) : null}
           {serviceType === "Fromaeropuerto" ||
-          serviceType === "Toaeropuerto" ||
-          serviceType === "ToaeropuertoHotel" ||
-          serviceType === "fromaeropuertoHotel" ? (
+            serviceType === "Toaeropuerto" ||
+            serviceType === "ToaeropuertoHotel" ||
+            serviceType === "fromaeropuertoHotel" ? (
             <select
               className="modalSelect"
               onChange={(e) => setAeropuerto(e.target.value)}
@@ -226,7 +252,7 @@ const Trasports = () => {
             </select>
           ) : null}
           {serviceType === "fromaeropuertoHotel" ||
-          serviceType === "ToaeropuertoHotel" ? (
+            serviceType === "ToaeropuertoHotel" ? (
             <select
               className="modalSelect"
               onChange={(e) => setHotel(e.target.value)}
@@ -243,14 +269,12 @@ const Trasports = () => {
             <Counter name={"Numero de pasajeros"} />
             <Counter name={"Equipaje"} />
           </div>
+          <button className="btn btn-primary mb-5">Solicitar Trasporte</button>
         </div>
         <div
           style={{
             height: "100%",
-            flex: 1,
-            justifyContent: "center",
-            alignItems: "center",
-            marginBottom: 100,
+            width: '100%'
           }}
         >
           <GoogleApiWrapper

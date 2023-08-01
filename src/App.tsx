@@ -38,16 +38,21 @@ function App() {
       <HeaderPage />
       <div>
         {/* <img className="AppBanner" src={"/Clip.png"} alt={"pool vacation"} /> */}
-        <Content  >
-          <h1 className="bannerTexth1">
-          Travel safely 
-          </h1>
-          <h2 className="bannerTexth2">Transporte desde ""</h2>
-          <br/>
-          <div className="bannerhome">
-            <Link to="/trasports" className="tertiaryButton">!Reserva ahora!</Link>
+        <Content className="bannerText" >
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems:'flex-start', marginLeft:'10%' }}>
+          <div>
+
+            <img src={"/jasambrilogo.png"} alt={"on"} style={{ height: 200, }} />
           </div>
-        </Content >
+          <div>
+
+            <h2>Agencia de Trasporte y <br/> Excursiones en Punta Cana,<br /> República Dominicana.</h2>
+          </div>
+        </div>
+        {/* <Link to="/" className="tertiaryButton">
+            !Reserva ya!
+          </Link> */}
+      </Content>
         <br/>
         <div className="container">
      
@@ -106,13 +111,13 @@ function App() {
           <Card title="Excusión
 Isla Catalina" image="./islacatalina.png"/>
           <Card title="Excusión Isla Saona" image="islasaona.png"/>
-          <Card title="Excursón Santo Domingo" image="citytour.png"/> <Card />
-          <Card />
+          <Card title="Excursón Santo Domingo" image="citytour.png"/> <Card title="Excusión Isla Saona" image="islasaona.png"/>
+          <Card title="Excusión Isla Saona" image="islasaona.png"/>
             </div>
           </section>
-          <article className="AppSuscribe">
+          {/* <article className="AppSuscribe">
             <PromotionBanner />
-          </article>
+          </article> */}
           <br/>
         {/* <Suscribe /> */}
         <br />

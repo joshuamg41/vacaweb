@@ -22,7 +22,7 @@ const Contacto = () => {
     border: 0px solid #000;
   `;
   return (
-    <div style={{background:'white'}}>
+    <div style={{ background: 'white' }}>
       <HeaderPage />
       {/* <img
         className="AppBanner"
@@ -30,52 +30,43 @@ const Contacto = () => {
         alt={"pool vacation"}
       /> */}
       <Content className="bannerText">
-        <h1>
-          The experiences
-          <br />
-          you deserve
-        </h1>
-        <h2>Reserva desde: US$ 249.00 p/p</h2>
-        {/* <Link to="/" className="tertiaryButton">
-            !Reserva ya!
-          </Link> */}
+      
       </Content>
       <br />
-      <div className="container" >
+      <div className="container" style={{alignItems:'center', justifyContent:'center'}} >
         <h1 style={{ fontWeight: "400", fontSize: 50, color: "gray" }}>
           Contacto
         </h1>
         <br />
-        <h2 style={{fontSize:30, fontWeight: '400', color:'grey'}}>
-        Si desea ponerse <br/>
-en contacto
+        <h2 style={{ fontSize: 30, fontWeight: '400', color: 'grey' }}>
+          Si desea ponerse <br />
+          en contacto
         </h2>
-        <div style={{display:'flex', justifyContent:'space-between', flexWrap:'wrap'}}>
-        <form className="contactForm">
+        <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+          <form className="contactForm">
             <input type="text" placeholder="Nombre" />
             <input type="text" placeholder="Apellidos" />
             <input type="text" placeholder="Celular" />
             <input type="email" placeholder="Correo" />
             <input type="text" placeholder="Asunto" />
             <textarea placeholder="Mensaje"></textarea>
-            <br/>
-          <input style={{background:'#F17E22', width:150}} type="submit" value="Enviar" />
+            <br />
+            <input style={{ background: '#ff9300', width: 150 }} type="submit" value="Enviar" />
 
-        </form>
-        <div style={{display:'flex', flexDirection:'column'}}>
-             <img
-        style={{width: 500, height: 200}}
-        src={"/logos/vacalogo.svg"}
-        alt={"logo travel vacation"}
-      /> 
+          </form>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <img className="imagelogo"
+              src={"/logos/vacalogo.svg"}
+              alt={"logo travel vacation"}
+            />
             {/* <img
         style={{width: 200, height: 200, alignSelf:'center'}}
         src={"/logos/whatapp.svg"}
         alt={"whatsapp logo"}
       />  */}
+          </div>
         </div>
-        </div>
-        <br/>
+        <br />
       </div>
       <Footer />
     </div>

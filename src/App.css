@@ -11,6 +11,13 @@
   margin: 0 auto;
   max-width: 1200px;
 }
+@media (max-width: 1000px) {
+  .container{
+    width: 100%;
+
+
+  }
+}
 
 .bannerText{
   padding-top: 3rem;
@@ -23,18 +30,19 @@
   
 }
 .bannerText h1{
-  font-size: 6rem;
-  font-weight: 400;
-  color: #fff;
-max-width: 1200px;
-margin: 0 auto;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #000;
+  font-family:'Work Sans';
+  max-width: 1200px;
+
 }
 .bannerTexth1{
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 400;
   color: #fff;
-max-width: 1200px;
-margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 @media (max-width: 1000px) {
   .bannerText{
@@ -52,7 +60,7 @@ margin: 0 auto;
   color: #fff;
   margin-bottom: 2rem;
   max-width: 1200px;
-margin: 0 auto;
+  margin: 0 auto;
 }
 .bannerTexth2{
   color: #fff;
@@ -141,11 +149,14 @@ margin: 0 auto;
   font-weight: 400;
   color:#2e7ff7;
 }
+.bodyTextSecundary:hover{
+  color:#ff9300;
+}
 .separator{
 margin: 0.3rem;
 }
 .primaryButton{
-  color: #000;
+  color: white;
   padding: 0.3rem 1rem;
   font-size: 0.8rem;
   background-color: #2e7ff7;

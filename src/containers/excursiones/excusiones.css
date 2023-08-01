@@ -1,0 +1,10 @@
+.containerexcursions{
+
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+     row-gap: 20px;
+     justify-content: center;
+     justify-items: center;
+     margin-bottom: 20px;
+      
+}

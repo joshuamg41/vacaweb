@@ -1,10 +1,10 @@
 
-.cardContainer:hover {
+/* .cardContainer:hover {
     box-shadow: -1px 16px 29px -6px rgba(105,105,105,0.42);
     -webkit-box-shadow: -1px 16px 29px -6px rgba(105,105,105,0.42);
     -moz-box-shadow: -1px 16px 29px -6px rgba(105,105,105,0.42);
     border-width: 0;
-}
+} */
 .cardImg {
     height: 160px;
     margin: 0;
@@ -26,8 +26,10 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-top: -5px;
-    min-height: 130px;
+    min-height: 150px;
+    max-width: 210px;
 }
+
 .cardTitle {
     font-size: 1rem;
     font-weight:600;

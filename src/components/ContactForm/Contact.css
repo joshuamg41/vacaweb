@@ -1,0 +1,17 @@
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.contactForm input, .contactForm textarea, .contactForm select{
+   width: 280px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    border: 0px solid transparent;
+    color: white;
+    background-color: #f1f1f1;
+}
+.contactForm textarea {
+    height: 100px;
+}

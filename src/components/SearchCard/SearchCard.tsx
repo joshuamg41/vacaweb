@@ -121,7 +121,7 @@ const SearchCard = ({
               ) : null}
               <input
                 type="button"
-                value="RESERVA"
+                value="Buscar"
                 className="primaryButton"
             
                 
@@ -131,7 +131,7 @@ const SearchCard = ({
         </div>
       ) : (
         <div className="searchCardContainer">
-          <form className="searchCard">
+          <form className="searchCard mx-4">
             <h3>{!title ? "Elige tu Excusión o actividad" : title}</h3>
             <div className="searchCardInput">
               <select
@@ -148,10 +148,8 @@ const SearchCard = ({
                   borderRadius: 4,
                 }}
               >
-                <option value="montana">Excusiones</option>
-                <option value="montana">Excusión Montaña redonda</option>
-                <option value="montana">Buseo</option>
-                <option value="montana">Buggie</option>
+                <option value="montana">Santo Domingo</option>
+                <option value="montana">Punta Cana</option>
               </select>
               <input
                 className="searchSelect"
@@ -165,7 +163,7 @@ const SearchCard = ({
                 }}
                 type="date"
               />
-              <input type="button" value="RESERVA" className="primaryButton" />
+              <input type="button" value="Buscar" className="primaryButton" />
             </div>
           </form>
         </div>

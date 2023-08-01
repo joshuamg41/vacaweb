@@ -12,15 +12,22 @@ import Excurciones from "./containers/excursiones/excursiones";
 import Trasports from "./containers/Trasports/Transports";
 import Ofertas from "./containers/Ofertas/Ofertas";
 import Contacto from "./containers/contacto/contacto";
+import "react-image-gallery/styles/css/image-gallery.css";
+import Registration from "./containers/Registration/Registration";
+import UploadExcusion from "./containers/UploadExcusion/Registration"
+import Bookings from './containers/Bookings/Registration'
+import Booking from './containers/Booking/Registration'
+
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Trasports />,
   },
   {
-    path: "/trasports",
-    element: <Trasports />,
+    path: "/home",
+    element: <App/>
   },
   {
     path: "/excursiones",
@@ -50,6 +57,25 @@ const router = createBrowserRouter([
     path: "/hoteldetail",
     element: <HotelDetail />,
   },
+  {
+    path:"/signin",
+    element: <Registration/>
+  },
+  {
+    path:"/upload",
+    element: <UploadExcusion/>
+  },
+  {
+    path:"/bookings",
+    element: <Bookings/>
+  },
+  {
+    path:"/booking",
+    element: <Booking/>
+  },
+  
+  
+
   // {
   //   path: "/detail",
   //   element: <Destail />,

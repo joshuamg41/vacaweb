@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./Counter.css";
-export default function Counter({name}) {
+export default function Counter({ name }) {
   const [counter, setCounter] = useState(0);
 
   //increase counter
@@ -19,14 +19,17 @@ export default function Counter({name}) {
     }
   };
   return (
-    <div className="counter">
+    <div className="counter card">
       <h5>{name}</h5>
-      <div className="btn__container">
-        <button className="control__btn" onClick={increase}>+</button>
-      <span className="counter__output"> {counter}</span>
-        <button className="control__btn" onClick={decrease}>-</button>
-        <button className="reset" onClick={reset}>Reset</button>
-      </div>
+      <form>
+
+        <div className="btn__container">
+          <button className="btn btn-light" onClick={increase} type="button" >+</button>
+          <span className="counter__output"> {counter}</span>
+          <button className="btn btn-light" onClick={decrease} type="button">-</button>
+          <button className="btn btn-secondary" onClick={reset} type="button" >Reset</button>
+        </div>
+      </form>
     </div>
   );
 }

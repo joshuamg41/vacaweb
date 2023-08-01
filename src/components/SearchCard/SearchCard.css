@@ -1,47 +1,71 @@
-.searchCardContainer{
+.searchCardContainer {
     display: flex;
     justify-content: center;
     position: relative;
     margin-bottom: 3rem;
-    margin: 0 auto;;
+    margin: 0 auto;
+    ;
     max-width: 1000px;
     align-items: center;
     margin: 1rem auto;
-    
+
 }
-.searchCard{    
+
+.searchCard {
     background-color: #fff;
     padding: 2rem 5rem;;
     width: 100%;
+    border-radius: 0.7rem;
 }
+
 @media (max-width: 1000px) {
-    .searchCard{
+    .searchCard {
         background-color: #fff;
-        border-radius: 0.7rem;
-        padding: 1rem 10vw;
+        padding: 1rem 0;
     }
 }
-.searchCard h3{
+
+.searchCard h3 {
     text-align: center;
     margin-bottom: 0.8rem;
     font-size: 0.7rem;
     font-weight: 600;
     color: #000;
 }
-.searchCardInput{
-   display: flex;
-   justify-content: center;
-gap: 0.7rem;
+
+.searchCardInput {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    min-width: 100px;
 
 
 }
-.searchSelect{
+
+@media (max-width: 650px) {
+    .searchCardInput {
+        display: flex;
+        justify-content: center;
+        gap: 0.7rem;
+        flex-direction: column;
+        padding: 0 10px;
+    
+    
+    }
+}
+
+.searchSelect {
     border: 1px solid #000;
     height: 1.7rem;
-    width: 15vw;
     border-radius: 4px;
     padding: 0 10px;
-    color:#4c4c4c;
+    color: #4c4c4c;
     padding: 0 10px;
 
+}
+
+@media (max-width: 650px) {
+    .searchSelect {
+      width: 100%;
+    }
 }

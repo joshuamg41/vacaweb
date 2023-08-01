@@ -1,7 +1,7 @@
 .counter {
     width: 100%;
     display: flex;
-   padding: 10px;
+    padding: 10px;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
@@ -12,14 +12,20 @@
  
 .counter h5 {
   margin-bottom: 4px;
+  font-size: 15px;
 }
  
 .counter__output {
- margin-right: 5px;   
+ margin: 0 5px;  
+ text-align: center;
+
 }
 
 .btn__container {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
 }
 
 .control__btn {
